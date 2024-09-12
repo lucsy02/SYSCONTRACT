@@ -9,6 +9,7 @@
 
 body{
     height: 900vh;
+    
 }
 
 /*Menu lateral*/
@@ -91,3 +92,36 @@ ul li.item-menu a .icon > i{
 
 
 /*Formulário de cadastro de clientes*/
+label{
+    font-size: 1.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+input{
+    font-size: 1rem;
+}
+
+
+.form{
+    flex-direction: column;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #390055;
+    margin-left: 22%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.form-header{
+    margin-bottom: 3rem;
+    display: flex;
+}
+
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
