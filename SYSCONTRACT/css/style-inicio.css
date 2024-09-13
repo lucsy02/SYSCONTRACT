@@ -163,20 +163,42 @@ header{
         top: -7px;
     }
 }
+/*Fim da barra de navegação*/
 
+h1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #b41fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/*Estilizando os cards*/
+.card{
+    box-shadow: 4px 8px 8px 4px rgba(132, 62, 189, 0.2);
+    border-color: #390055;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
 
 .cards{
-    margin-top: 150px;
+    margin-top: 120px;
     justify-content: center;
     display: flex;
-    gap:50px
+    gap:90px;
+
 }
 
 .cards2{
-    margin-top: 50px;
+    margin-top: 60px;
     justify-content: center;
     display: flex;
-    gap:50px
-
-
+    gap:90px;
+    margin-bottom: 40px;
 }
+/*Fim da estilização dos cards*/
