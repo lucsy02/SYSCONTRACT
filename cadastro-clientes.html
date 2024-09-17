@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+
+    <!-- Link para o CSS do Bootstrap - icone -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Seu arquivo de estilos customizados -->
+    <link rel="stylesheet" href="css/style-cadastro-de-clientes.css">
+</head>
+<body>
+    <!--Menu lateral-->
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <img src="img/logo.png" alt="Logo" height="100" width="200">
+        </div><!--Fim btn-expandir-->
+        
+        <ul>
+            <li class="item-menu">
+                <a href="dashboard.html">
+                    <span class="icon"><i class="bi bi-columns-gap"></i></span>
+                    <span class="txt-link">Dashboard</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="clientes.html">
+                    <span class="icon"><i class="bi bi-person-vcard"></i></span>
+                    <span class="txt-link">Clente</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="contrato.html">
+                    <span class="icon"><i class="bi bi-file-arrow-up"></i></span>
+                    <span class="txt-link">Contrato</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="gerenciador.html">
+                    <span class="icon"><i class="bi bi-database-check"></i></span>
+                    <span class="txt-link">Gerenciador</span>
+                </a>
+            </li>
+
+            <li class="item-menu item-cliente">
+                <a href="cadastro-clientes.html">
+                    <span class="icon"><i class="bi bi-clipboard2-plus"></i></span>
+                    <span class="txt-link">Cadastro</span>
+                </a>
+            </li>
+
+            <li class="item-menu item-exit">
+                <a href="login.html">
+                    <span class="icon"><i class="bi bi-x-square"></i></span>
+                    <span class="txt-link">Log Out</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav><!--Fim menu lateral-->
+
+
+    <div class="form">
+        <form action="#">
+            <div class="form-header">
+                <div class="title">
+                    <h1>Cadastre o Cliente</h1>
+                </div><!--title-->
+             
+            </div><!--form-header-->
+        <div class="aluno">
+            <div class="input-group">
+                <div class="title-aluno">
+                    <h3>Dados Aluno</h3>
+                </div><!--title-aluno-->
+                <div class="input-box">
+                   <label for="nomeA">Nome Completo</label>
+                   <input id="nomeA" type="text" name="nomeA" placeholder="Nome do aluno" required>
+                </div><!--input-box-->
+                 <div class="input-box">
+                    <label for="nascimentoA">Data Nascimento</label>
+                    <input id="nascimentoA" type="date" name="nascimentoA" placeholder="dd/mm/aaaa" required>
+                 </div><!--input-box-->
+                 <div class="input-box">
+                    <label for="contatoA">Número contato</label>
+                    <input id="contatoA" type="tel" name="contatoA" placeholder="(00)00000-0000">
+                 </div><!--input-box-->
+                 <div class="input-box">
+                    <label for="emailA">E-mail</label>
+                    <input id="emailA" type="email" name="emailA" placeholder="Email aluno">
+                 </div><!--input-box-->
+                 <div class="input-box">
+                    <label for="escola">Instituição escolar</label>
+                    <input id="escola" type="text" name="escola" placeholder="Escola que estuda">
+                 </div><!--input-box-->
+                 <div class="input-box">
+                    <label for="sexoA">Sexo</label>
+                    <input list="sexoA">
+                    <datalist id="sexoA">
+                    <option value="Masculino"></option>
+                    <option value="Feminino"></option>
+                    <option value="Outros"></option>                    
+                    </datalist>
+                 </div><!--input-box-->
+                 <div class="input-box">
+                    <label for="serie">Série</label>
+                    <input list="serie">
+                    <datalist id="serie">
+                    <option value="Infantil"></option>
+                    <option value="1° Ano EFI"></option>
+                    <option value="2° Ano EFI"></option>
+                    <option value="3° Ano EFI"></option>
+                    <option value="4° Ano EFI"></option>
+                    <option value="5° Ano EFI"></option>
+                    <option value="6° Ano EFII"></option>
+                    <option value="7° Ano EFII"></option>
+                    <option value="8° Ano EFII"></option>
+                    <option value="9° Ano EFII"></option>
+                    <option value="1° Ano EM"></option>
+                    <option value="2° Ano EM"></option>
+                    <option value="3° Ano EM"></option>
+                    <option value="Graduação"></option>
+                    <option value="Outros"></option>                    
+                    </datalist>
+                 </div><!--input-box-->
+        </div><!--input-aluno-->
+        </div> <!--Aluno-->
+
+        <div class="endereco">
+        <div class="input-group">
+            <div class="title-endereco">
+                <h3>Dados Endereço</h3>
+            </div><!--title-endereco-->
+                 <div class="input-box">
+                    <label for="CEP">CEP</label>
+                    <input id="cep" type="text" name="cep" placeholder="00000-000" required>
+                 </div><!--input-box-->
+                 <div class="input-box">
+                    <label for="logradouro">Rua</label>
+                    <input id="logradouro" type="text" name="logradouro" placeholder="Rua Santa Cruz" required>
+                 </div><!--input-box-->
+                 <div class="input-box">
+                    <label for="numero">Número</label>
+                    <input id="numero" type="number" name="cep" placeholder="Digite o número da residência" required>
+                 </div><!--input-box-->
+                 <div class="input-box">
+                    <label for="bairro">Bairro</label>
+                    <input id="bairro" type="text" name="bairro" placeholder="Centro" required>
+                 </div><!--input-box-->
+                 <div class="input-box">
+                    <label for="cidade">Cidade</label>
+                    <input id="cidade" type="text" name="cidade" placeholder="Itu" required>
+                 </div><!--input-box-->
+                 <div class="input-box">
+                    <label for="estado">Estado</label>
+                    <input id="estado" type="text" name="estado" placeholder="SP" required>
+                 </div><!--input-box-->
+                 <div class="input-box">
+                    <label for="complemento">Complemento</label>
+                    <input id="complemento" type="text" name="complemento" placeholder="Bloco, Ap,...">
+                 </div><!--input-box-->
+        </div><!--input-endereco-->
+        </div><!--endereco-->
+
+        <div class="responsavel">
+            <div class="input-group">
+                <div class="title-responsavel">
+                <h3>Dados Responsável</h3>
+            </div><!--title-aluno-->
+            <div class="input-box">
+               <label for="nomeR">Nome Completo</label>
+               <input id="nomeR" type="text" name="nomeR" placeholder="Nome do responsável" required>
+            </div><!--input-box-->
+             <div class="input-box">
+                <label for="nascimentoR">Data Nascimento</label>
+                <input id="nascimentoR" type="date" name="nascimentoR" placeholder="dd/mm/aaaa" required>
+             </div><!--input-box-->
+             <div class="input-box">
+                <label for="contatoR">Número contato</label>
+                <input id="contatoR" type="tel" name="contatoR" placeholder="(00)00000-0000">
+             </div><!--input-box-->
+             <div class="input-box">
+                <label for="emailR">E-mail</label>
+                <input id="emailR" type="email" name="emailR" placeholder="Email responsável">
+             </div><!--input-box-->
+             <div class="input-box">
+                <label for="profissao">Profissão</label>
+                <input id="profissao" type="text" name="profissao" placeholder="Profissão">
+             </div><!--input-box-->
+             <div class="input-box">
+                <label for="sexoR">Sexo</label>
+                <input list="sexoR">
+                <datalist id="sexoR">
+                <option value="Masculino"></option>
+                <option value="Feminino"></option>
+                <option value="Outros"></option>                    
+                </datalist>
+             </div><!--input-box-->            
+        </div><!--input-responsavel-->
+    </div><!--responsavel-->
+            <div class="cadastro-button">
+                <button><a href="#">Cadastrar</a></button>
+            </div> <!--cadastro-button-->
+            
+        </form>
+        </div>
+    </div><!--form-->
+
+</body>
+</html>
