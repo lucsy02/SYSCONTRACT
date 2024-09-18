@@ -190,7 +190,7 @@ input{
 
 }
 
-.form :where(.genero input, .genero dados ){
+.form :where(.genero input, .genero dados){
     cursor: pointer;
 }
 
