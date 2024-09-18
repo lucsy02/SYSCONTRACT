@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR"></html>
+<html lang="pt-br"></html>
 <head>
 
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <!-- Link para o CSS do Bootstrap - icone -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Seu arquivo de estilos customizados -->
-    <link rel="stylesheet" href="css/style-system.css">
+    <link rel="stylesheet" href="css/style-cadastro-de-clientes.css">
 </head>
 <body>
     <!--Menu lateral-->
@@ -63,151 +63,116 @@
     </nav><!--Fim menu lateral-->
 
 
-    <div class="form">
-        <form action="#">
-            <div class="form-header">
-                <div class="title">
-                    <h1>Cadastre o Cliente</h1>
-                </div><!--title-->
-             
-            </div><!--form-header-->
-        <div class="aluno">
-            <div class="input-group">
-                <div class="title-aluno">
-                    <h3>Dados Aluno</h3>
-                </div><!--title-aluno-->
-                <div class="input-box">
-                   <label for="nomeA">Nome Completo</label>
-                   <input id="nomeA" type="text" name="nomeA" placeholder="Nome do aluno" required>
-                </div><!--input-box-->
-                 <div class="input-box">
-                    <label for="nascimentoA">Data Nascimento</label>
-                    <input id="nascimentoA" type="date" name="nascimentoA" placeholder="dd/mm/aaaa" required>
-                 </div><!--input-box-->
-                 <div class="input-box">
-                    <label for="contatoA">Número contato</label>
-                    <input id="contatoA" type="tel" name="contatoA" placeholder="(00)00000-0000">
-                 </div><!--input-box-->
-                 <div class="input-box">
-                    <label for="emailA">E-mail</label>
-                    <input id="emailA" type="email" name="emailA" placeholder="Email aluno">
-                 </div><!--input-box-->
-                 <div class="input-box">
-                    <label for="escola">Instituição escolar</label>
-                    <input id="escola" type="text" name="escola" placeholder="Escola que estuda">
-                 </div><!--input-box-->
-                 <div class="input-box">
-                    <label for="sexoA">Sexo</label>
-                    <input list="sexoA">
-                    <datalist id="sexoA">
-                    <option value="Masculino"></option>
-                    <option value="Feminino"></option>
-                    <option value="Outros"></option>                    
-                    </datalist>
-                 </div><!--input-box-->
-                 <div class="input-box">
-                    <label for="serie">Série</label>
-                    <input list="serie">
-                    <datalist id="serie">
-                    <option value="Infantil"></option>
-                    <option value="1° Ano EFI"></option>
-                    <option value="2° Ano EFI"></option>
-                    <option value="3° Ano EFI"></option>
-                    <option value="4° Ano EFI"></option>
-                    <option value="5° Ano EFI"></option>
-                    <option value="6° Ano EFII"></option>
-                    <option value="7° Ano EFII"></option>
-                    <option value="8° Ano EFII"></option>
-                    <option value="9° Ano EFII"></option>
-                    <option value="1° Ano EM"></option>
-                    <option value="2° Ano EM"></option>
-                    <option value="3° Ano EM"></option>
-                    <option value="Graduação"></option>
-                    <option value="Outros"></option>                    
-                    </datalist>
-                 </div><!--input-box-->
-        </div><!--input-aluno-->
-        </div> <!--Aluno-->
-
-        <fieldset class="endereco">
-        <div class="input-group">
-            <div class="title-endereco">
-                <h3>Dados Endereço</h3>
-            </div><!--title-endereco-->
-                 <div class="input-box">
-                    <label for="CEP">CEP</label>
-                    <input id="cep" type="text" name="cep" placeholder="00000-000" required>
-                 </div><!--input-box-->
-                 <div class="input-box">
-                    <label for="logradouro">Rua</label>
-                    <input id="logradouro" type="text" name="logradouro" placeholder="Rua Santa Cruz" required>
-                 </div><!--input-box-->
-                 <div class="input-box">
-                    <label for="numero">Número</label>
-                    <input id="numero" type="number" name="cep" placeholder="Digite o número da residência" required>
-                 </div><!--input-box-->
-                 <div class="input-box">
-                    <label for="bairro">Bairro</label>
-                    <input id="bairro" type="text" name="bairro" placeholder="Centro" required>
-                 </div><!--input-box-->
-                 <div class="input-box">
-                    <label for="cidade">Cidade</label>
-                    <input id="cidade" type="text" name="cidade" placeholder="Itu" required>
-                 </div><!--input-box-->
-                 <div class="input-box">
-                    <label for="estado">Estado</label>
-                    <input id="estado" type="text" name="estado" placeholder="SP" required>
-                 </div><!--input-box-->
-                 <div class="input-box">
-                    <label for="complemento">Complemento</label>
-                    <input id="complemento" type="text" name="complemento" placeholder="Bloco, Ap,...">
-                 </div><!--input-box-->
-        </div><!--input-endereco-->
-        </div><!--endereco-->
-
-        <fieldset class="responsavel">
-            <div class="input-group">
-                <div class="title-responsavel">
-                <h3>Dados Responsável</h3>
-            </div><!--title-aluno-->
+<!--Formulário-->
+<div class="bodyform">
+    <section class="container">
+        <header>Cadastro Cliente</header>
+        <h3 class="dados">Dados do aluno</h3>
+        <form action="#" class="form">
             <div class="input-box">
-               <label for="nomeR">Nome Completo</label>
-               <input id="nomeR" type="text" name="nomeR" placeholder="Nome do responsável" required>
-            </div><!--input-box-->
-             <div class="input-box">
-                <label for="nascimentoR">Data Nascimento</label>
-                <input id="nascimentoR" type="date" name="nascimentoR" placeholder="dd/mm/aaaa" required>
-             </div><!--input-box-->
-             <div class="input-box">
-                <label for="contatoR">Número contato</label>
-                <input id="contatoR" type="tel" name="contatoR" placeholder="(00)00000-0000">
-             </div><!--input-box-->
-             <div class="input-box">
-                <label for="emailR">E-mail</label>
-                <input id="emailR" type="email" name="emailR" placeholder="Email responsável">
-             </div><!--input-box-->
-             <div class="input-box">
-                <label for="profissao">Profissão</label>
-                <input id="profissao" type="text" name="profissao" placeholder="Profissão">
-             </div><!--input-box-->
-             <div class="input-box">
-                <label for="sexoR">Sexo</label>
-                <input list="sexoR">
-                <datalist id="sexoR">
-                <option value="Masculino"></option>
-                <option value="Feminino"></option>
-                <option value="Outros"></option>                    
-                </datalist>
-             </div><!--input-box-->            
-        </div><!--input-responsavel-->
-        </fieldset><!--responsavel-->
-            <div class="cadastro-button">
-                <button><a href="#">Cadastrar</a></button>
-            </div> <!--cadastro-button-->
-            
+                <label>Nome completo</label>
+                <input type="text" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="input-box">
+                <label>E-mail Address</label>
+                <input type="email" placeholder="Digite seu E-mail" required>
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                <label>Número de telefone</label>
+                <input type="tel" placeholder="Digite seu telefone" required>
+            </div>
+
+            <div class="input-box">
+                <label>Data de nascimento</label>
+                <input type="date" placeholder="Digite sua Data de nascimento" required>
+            </div>
+
+            <div class="input-box">
+                <label>Instituição escolar</label>
+                <input type="text" placeholder="" required>
+            </div>
+
+            <div class="input-box">
+                <label>Série</label>
+                <input type="text" placeholder="" required>
+            </div>
+
+</div>
+
+            <div class="genero-box">
+                <h3>Sexo</h3>
+                <div class="genero-option">
+                    <div class="genero">
+                        <input type="radio" id="check-feminino" name="genero" checked>
+                        <label for="check-feminino">Feminino</label>
+                    </div>
+                    <div class="genero">
+                        <input type="radio" id="check-masculino" name="genero">
+                        <label for="check-masculino">Masculino</label>
+                    </div>  
+                    <div class="genero">
+                        <input type="radio" id="check-outro" name="genero">
+                        <label for="check-outro">Prefiro não responder</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="input-box addres">
+                <h3 class="dados end">Endereço</h3>
+                <input type="text" placeholder="Rua" required>
+                <input type="number" placeholder="Número" required>
+                <input type="number" placeholder="Complemento" required>
+                <input type="text" placeholder="Cidade" required>
+                <input type="text" placeholder="Região" required>
+                <input type="text" placeholder="CEP" required>
+
+            </div>
+
+            <div class="dadosresponsavel">
+                <h3 class="dados">Dados do responsável</h3>
+                <form action="#" class="form">
+                    <div class="input-box">
+                        <label>Nome completo</label>
+                        <input type="text" placeholder="Digite seu nome" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <label>E-mail Address</label>
+                        <input type="email" placeholder="Digite seu E-mail" required>
+                    </div>
+        
+                    <div class="column">
+                        <div class="input-box">
+                        <label>Número de telefone</label>
+                        <input type="tel" placeholder="Digite seu telefone" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <label>Data de nascimento</label>
+                        <input type="date" placeholder="Digite sua Data de nascimento" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <label>Profissão</label>
+                        <input type="text" placeholder="" required>
+                    </div>
+
+                    
+        
+
+            </div>
+
+
+            <button>Enviar</button>
+
         </form>
-        </div>
-    </div><!--form-->
+
+    </section>
+</div>
 
 </body>
 </html>
