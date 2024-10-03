@@ -71,23 +71,23 @@
         <form action="#" class="form">
             <div class="input-box">
                 <label>Nome completo</label>
-                <input type="text" placeholder="Digite seu nome" required>
+                <input type="text" placeholder="Digite o nome completo" required>
             </div>
 
             <div class="input-box">
-                <label>E-mail Address</label>
-                <input type="email" placeholder="Digite seu E-mail" required>
+                <label>E-mail</label>
+                <input type="email" placeholder="Digite o E-mail do aluno" required>
             </div>
 
             <div class="column">
                 <div class="input-box">
                 <label>Número de telefone</label>
-                <input type="tel" placeholder="Digite seu telefone" required>
+                <input type="tel" placeholder="Digite o telefone do aluno">
             </div>
 
             <div class="input-box">
                 <label>Data de nascimento</label>
-                <input type="date" placeholder="Digite sua Data de nascimento" required>
+                <input type="date" placeholder="Digite a data de nascimento" required>
             </div>
 
             <div class="input-box">
@@ -115,7 +115,11 @@
                     </div>  
                     <div class="genero">
                         <input type="radio" id="check-outro" name="genero">
-                        <label for="check-outro">Prefiro não responder</label>
+                        <label for="check-outro">Outros</label>
+                    </div>
+                    <div class="genero">
+                        <input type="radio" id="check-underfined" name="genero">
+                        <label for="check-underfined">Prefiro não responder</label>
                     </div>
                 </div>
             </div>
@@ -137,7 +141,7 @@
                 <form action="#" class="form">
                     <div class="input-box">
                         <label>Nome completo</label>
-                        <input type="text" placeholder="Digite seu nome" required>
+                        <input type="text" placeholder="Digite o nome do responsável" required>
                     </div>
 
                     <div class="input-box">
@@ -188,14 +192,18 @@
                     </div>  
                     <div class="genero">
                         <input type="radio" id="check-outro" name="genero">
+                        <label for="check-outro">Outros</label>
+                    </div>
+                    <div class="genero">
+                        <input type="radio" id="check-outro" name="genero">
                         <label for="check-outro">Prefiro não responder</label>
                     </div>
                 </div>
             </div>
 
 
-            <button>Enviar</button>
-            <button>Cancelar</button>
+            <button class="cadastrar">Cadastrar</button> <!--Enviar os dados para a tabela de Clientes em clientes.html-->
+            <button class="cancelar">Cancelar</button> <!--Limpar tudo o que foi escrito no formulário-->
 
         </form>
 
