@@ -7,11 +7,6 @@
     font-family: 'Outfit', sans-serif;
 }
 
-body{
-    height: 900vh;
-    
-}
-
 /*Menu lateral*/
 nav.menu-lateral{
     width: 80px;
@@ -19,7 +14,6 @@ nav.menu-lateral{
     background-color: #b41fff;
     padding: 40px 0 40px 1%;
     box-shadow: 3px 0 0 #390055;
-
     position: fixed;
     top: 0;
     left: 0;
@@ -101,27 +95,44 @@ input{
     font-size: 1rem;
 }
 
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
 
-.form{
-    flex-direction: column;
-    width: 70%;
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 212);
+}
+
+.form-image{
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #390055;
-    margin-left: 22%;
-    margin-top: 5%;
-    padding-bottom: 5%;
+    background-color: #fde3a7d7;
+    padding: 1rem;
+}
+
+.form-image img{
+    width: 21rem;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
 }
 
 .form-header{
-    margin-bottom: 3rem;
-    display: flex;
-}
 
-.input-group{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem 0;
 }
