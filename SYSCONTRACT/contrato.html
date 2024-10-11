@@ -10,7 +10,7 @@
     <!-- Link para o CSS do Bootstrap - icone -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Seu arquivo de estilos customizados -->
-    <link rel="stylesheet" href="css/style-system.css">
+    <link rel="stylesheet" href="css/style-contrato.css">
 </head>
 <body>
     <!--Menu lateral-->
@@ -64,9 +64,15 @@
         <form action="#">
             <div form-header>
                 <div class="title">
-                    <h1>Pagamento</h1>
+                    <h1>Criação de contrato</h1>
                 </div>
             </div>
+            
+            
+            <div class="input-box">
+                <label for="nomealuno">Nome Aluno</label>
+                <input id="nomealuno" type="text">
+            </div><!--Aqui deverá ocorrer uma pesquisa no banco de dados-->
 
             <div class="input-group">
                 <div class="input-box">
@@ -143,11 +149,10 @@
                 </div>
             </div>
 
-            <div class="buttons">
-                <button><a href="#">Cancelar</a></button>
-
-                <button><a href="#">Gerar contrato</a></button>
-            </div>
+                <div class="botao">
+                <button class="gerar">Gerar Contrato</button> <!--Enviar os dados para a tabela de Clientes em clientes.html-->
+                <button class="cancelar">Cancelar</button> <!--Limpar tudo o que foi escrito no formulário-->
+                </div>
 
         </form>
     </div>
