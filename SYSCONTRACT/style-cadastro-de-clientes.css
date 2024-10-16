@@ -74,7 +74,7 @@ ul li.item-menu a .icon > i{
 }
 
 .item-exit{
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 10px;
 }
 
@@ -192,10 +192,24 @@ ul li.item-menu a .icon > i{
     margin-top: 40px;
 }
 
-.form button{
+.form button.cadastrar{
     height: 55px;
     width: 100%;
-    background-color: #390055;
+    background-color: #108b00;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all ease;
+}
+
+.form button.cancelar{
+    height: 55px;
+    width: 100%;
+    background-color: #fa2222;
     color: #fff;
     font-size: 1rem;
     font-weight: 400px;
@@ -209,6 +223,7 @@ ul li.item-menu a .icon > i{
 .form button:hover{
     background-color: #a887b9;
 }
+
 /*Fim do formulário*/
 
 /*Responsividade*/

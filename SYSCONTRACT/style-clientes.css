@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 900vh;
+    
+}
+
+/*Menu lateral*/
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #b41fff;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #390055;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;/*Esconde as letras*/
+    transition: .3s;
+}
+
+nav.menu-lateral:hover{
+    width: 300px;
+}
+
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+/*Afeta apenas ela*/
+.btn-expandir > i{ 
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;  /*Tira as bolinhas*/
+}
+
+ul li.item-menu{
+    transition: .4s;
+}
+
+
+ul li.item-menu:hover{
+    background: #390055;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none; /*Tira o sublinhado*/
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+
+}
+
+.item-exit{
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.item-cliente{
+    margin-top: 50px;
+
+}
+
+/*Pesquisa*/
+.search-box{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background: #d382fc;
+    height: 50px;
+    padding: 10px;
+    border-radius: 40px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.search-text{
+    background:none;
+    border:0;
+    outline: 0;
+    font-size:16px;
+    font-weight: bolder;
+    transition: 0.4s;
+    width:0;
+    padding:0;
+}
+
+.search-box:hover > .search-text {
+    width:320px;
+    padding-left: 20px;
+}
+
+.search-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box:hover > .search-btn{
+    background: #390055;
+}
+
+.search-box:hover > .search-btn .loupe-black{
+    display: none;
+}
+
+.search-box:hover > .search-btn .loupe-white{
+    display: block;
+}
+
+.loupe-white{
+    display: none;
+}
+
+
+/*Tabela clientes*/
+table{
+    border-collapse: collapse;
+    z-index: -1;
+}
+
+caption{
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 20px;
+    background: #b41fff;
+    color: #fff;
+}
+thead{
+    background-color: #d382fc;
+}
+
+th, td{
+    border: 1px solid #b41fff;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(228, 228, 228);
+}
+
+div#container {
+    overflow-x: auto ; /*rolagem lateral da tabela*/
+    display: flex;
+    position: relative;
+    margin-left: 19%;
+    margin-top: 150px;
+}
