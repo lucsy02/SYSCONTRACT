@@ -7,6 +7,11 @@
     font-family: 'Outfit', sans-serif;
 }
 
+body{
+    height: 900vh;
+    
+}
+
 /*Menu lateral*/
 nav.menu-lateral{
     width: 80px;
@@ -14,6 +19,7 @@ nav.menu-lateral{
     background-color: #b41fff;
     padding: 40px 0 40px 1%;
     box-shadow: 3px 0 0 #390055;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -72,7 +78,7 @@ ul li.item-menu a .icon > i{
 }
 
 .item-exit{
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 10px;
 }
 
@@ -80,103 +86,4 @@ ul li.item-menu a .icon > i{
     margin-top: 100px;
 
 }
-
-/*Dashboard*/
-
-
-
-/*Formulário de cadastro de clientes*/
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.container{
-    margin-left: 100px;
-    margin-top: 500px;
-    width: 80%;
-    height: 1000px;
-    display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 212);
-}
-
-.form-image{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fde3a7d7;
-    padding: 1rem;
-}
-
-.form-image img{
-    width: 21rem;
-}
-
-.form{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 3rem;
-}
-
-.title{
-font-family: fantasy;
-font-size: 18px;
-color: #b41fff;;
-margin-top: 8px;
-margin-left: 20px;
-margin-bottom: 20px;
-}
-
-
-label{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-}
-
-.reno{
-font-family: 'Times New Roman', Times, serif;
-font-size: 20px;
-color: #b41fff;
-margin-top: 50px;
-margin-left: 50px;
-}
-
-.input-box{
-    margin-left: 100px;
-}
-
-.input-box input{
-    margin: 0.4rem 0;
-    padding: 0.8rem 1.0rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
-}
-
-.input-box input:hover{
-    background-color: #eeeeee75;
-}
-
-
-.Renovação{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-.input-box{
-    gap: 40px;
-    line-height: 20px;
-}
-
-
-
 
