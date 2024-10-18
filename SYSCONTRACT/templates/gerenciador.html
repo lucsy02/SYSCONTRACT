@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Contratos</title>
+    
+    <!-- Bootstrap e ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Arquivo de estilos customizados -->
+    <link rel="stylesheet" href="{% static 'css/style-gerenciador.css' %}">
+</head>
+<body>
+    <!-- Menu lateral ajustado -->
+    <nav class="menu-lateral" style="background-color: #b41fff; color: #fff; height: 100vh; position: fixed; width: 250px; padding: 20px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
+        <a class="navbar-brand mb-4" href="{% url 'inicio' %}">
+            <img src="{% static 'img/logo.png' %}" alt="Logo" height="100" width="200">
+        </a>
+        <ul class="navbar-nav flex-column w-100">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'dashboard' %}" style="color: #fff;">
+                    <i class="bi bi-columns-gap"></i> Dashboard
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'cadastro' %}" style="color: #fff;">
+                    <i class="bi bi-clipboard2-plus"></i> Cadastro
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'clientes' %}" style="color: #fff;">
+                    <i class="bi bi-person-vcard"></i> Cliente
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'contrato' %}" style="color: #fff;">
+                    <i class="bi bi-file-arrow-up"></i> Contrato
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'gerenciador' %}" style="color: #fff;">
+                    <i class="bi bi-database-check"></i> Gerenciador
+                </a>
+            </li>
+            <li class="nav-item mt-auto">
+                <a class="nav-link text-danger" href="{% url 'login' %}">
+                    <i class="bi bi-x-square"></i> Log Out
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container-fluid" style="margin-left: 270px; padding-top: 20px;"> <!-- Ajuste de margem para afastar o conteúdo da barra lateral -->
+        <div class="row">
+            <!-- Pesquisa -->
+            <div class="col-12 d-flex justify-content-center mt-4">
+                <div class="input-group mb-3 w-50">
+                    <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">
+                            <img src="{% static 'img/pesquisar-black.svg' %}" alt="Pesquisar" width="25px" height="25px">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabela de Contratos -->
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <caption>Contratos Gerados</caption>
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome Aluno</th>
+                                <th>Abertura</th>
+                                <th>Finalização</th>
+                                <th>Não assinado</th>
+                                <th>Assinado</th>
+                                <th>Valor por Hora</th>
+                                <th>Total de Horas</th>
+                                <th>Horas por mês</th>
+                                <th>Total a pagar</th>
+                                <th>Parcelas</th>
+                                <th>Valor por mês</th>
+                                <th>Data de pagamento</th>
+                                <th>Renovação Automática</th>
+                                <th>Forma de pagamento</th>
+                                <th>Serviço</th>
+                                <th>Vezes na semana</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>       
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

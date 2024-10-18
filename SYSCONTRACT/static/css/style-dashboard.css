@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+/* Barra lateral */
+.menu-lateral {
+    background-color: #b41fff;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral ul li {
+    width: 100%;
+}
+
+.menu-lateral ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    background-color: #630094;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #fff;
+    color: #390055;
+    transition: 0.3s;
+}
+
+/* Conteúdo */
+.container-fluid {
+    margin-left: 270px; /* Ajuste da margem para que o conteúdo não fique sobreposto à barra lateral */
+    padding-top: 20px;
+}
+
+/*Dashboard*/
+
+.container {
+    margin-left: 500px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.status-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.status {
+    width: 22%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#vencidos {
+    background-color: #ff4c4c;
+}
+
+#a-assinar {
+    background-color: #4c84ff;
+}
+
+#assinados {
+    background-color: #4caf50;
+}
+
+#a-vencer {
+    background-color: #ffcc00;
+}
+
+.count {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+/*Pizza*/
+.chart-container {
+    margin-left: 550px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+canvas {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+@media (max-width: 768px) {
+    .status-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .status {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    canvas {
+        max-width: 100%;
+        max-height: 300px;
+    }
+}

@@ -1,0 +1,78 @@
+/* Estilo temporário */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Barra lateral */
+.menu-lateral {
+    background-color: #b41fff;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000; /* Garante que a barra lateral fique acima do conteúdo */
+}
+
+.menu-lateral img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral ul li {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.menu-lateral ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    background-color: #630094;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #fff;
+    color: #390055;
+}
+
+/* Conteúdo principal */
+.container-fluid {
+    margin-left: 270px; /* Margem para afastar o conteúdo da barra lateral */
+    padding-top: 20px;
+}
+
+/* Tabela de Clientes */
+.table-responsive {
+    margin-top: 20px;
+}
+
+.table {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+

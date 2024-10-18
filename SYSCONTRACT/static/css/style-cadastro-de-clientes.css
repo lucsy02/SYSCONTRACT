@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+/* Estilo básico e ajustes adicionais */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+}
+
+/* Barra lateral */
+.menu-lateral {
+    background-color: #b41fff;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral ul li {
+    width: 100%;
+}
+
+.menu-lateral ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    background-color: #630094;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #fff;
+    color: #390055;
+    transition: 0.3s;
+}
+
+/*Afeta apenas ela*/
+.btn-expandir > i{ 
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;  /*Tira as bolinhas*/
+}
+
+ul li.item-menu{
+    transition: .4s;
+}
+
+
+ul li.item-menu:hover{
+    background: #390055;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none; /*Tira o sublinhado*/
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+
+}
+
+.item-exit{
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.item-cliente{
+    margin-top: 100px;
+
+}
+
+
+/*Formulário*/
+.bodyform{
+    position:absolute;
+    margin-left: 350px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #d8b5e9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.dados{
+    margin-top: 10px;
+}
+.container .form{
+    margin-top: 30px;
+}
+
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box dados{
+    color: #333;
+}
+
+.form :where(.input-box input, .select-box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.form .column{
+    display: flex;
+    column-gap: 15px;
+
+
+}
+
+.form .genero-box{
+    margin-top: 20px;
+}
+
+.genero-box h3{
+    color: #333;
+    font-size:1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.form :where(.genero-option, .genero){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .genero{
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+.genero input{
+    accent-color: #390055;
+
+}
+
+.form :where(.genero input, .genero dados){
+    cursor: pointer;
+}
+
+.end{
+    margin-top: 40px;
+}
+
+.addres :where(input){
+    margin-top: 15px;
+}
+
+.dadosresponsavel{
+    margin-top: 40px;
+}
+
+.form button{
+    height: 55px;
+    width: 100%;
+    background-color: #390055;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all ease;
+}
+
+.form button:hover{
+    background-color: #a887b9;
+}
+/*Fim do formulário*/
+
+/*Responsividade*/
+@media screen and (max-width: 1000px){
+    .form .column{
+        flex-wrap: wrap;
+    }
+    .form :where(.genero-option, .genero){
+        row-gap: 15px;
+    }
+}
